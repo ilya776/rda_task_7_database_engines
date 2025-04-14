@@ -9,7 +9,7 @@ CREATE TABLE Countries (
 ) ENGINE=InnoDB;
 
 
-CREATE TABLE GeoIPTable (
+CREATE TABLE GeoIPCache (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     RangeIP VARCHAR(50),
     CountryID INT
@@ -22,7 +22,7 @@ CREATE TABLE ProductDescription (
      CountryID INT
 ) ENGINE = InnoDB;
 
-CREATE TABLE LogsTable (
+CREATE TABLE Logs (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Timestamp DATETIME,
     Message TEXT
